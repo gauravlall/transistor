@@ -88,7 +88,7 @@ public class CloudUtil {
             }
         }
         if (!errors.isEmpty()) {
-            //throw new TransistorException(TRANSISTOR_MISSING_CLOUD_SERVICES, StringUtils.join(errors, ";\n"));
+            throw new TransistorException(TRANSISTOR_MISSING_CLOUD_SERVICES, StringUtils.join(errors, ";\n"));
         }
     }
 
